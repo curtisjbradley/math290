@@ -22,8 +22,9 @@ jobs:
       - name: Github Action for LaTeX
         uses: xu-cheng/latex-action@3.2.0
         with:
-          working_directory: 2023/NYSMTJ/AMATYC_J-4
+          working_directory: 2023/AMATYC_J-4
           root_file: main.tex
+      - run: ls -l
       - name: Upload
         uses: actions/upload-artifact@v4
         with:

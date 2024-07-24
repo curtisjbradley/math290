@@ -6,9 +6,15 @@
 \title{Problem 585}
 \author{Curtis Bradley}
 \date{March 2024}
-
 \begin{document}
+\maketitle
+\section{Problem}
+My dog Fido is tethered to a pole at a point $P$ inside a square yard $ABCD$. The distance from $P$ to $A$ is 13 feet,
+to $B$ is 5 feet, and to $C$ is 17 feet. City ordinance requires she have an area of at least 300 square feet to roam. If
+her rope is 21 feet long, will the ordinance be satisfied?
 
+
+\section{Solution} 
 Let $s$ be the length of each side of the square $ABCD$. Place the square in $\mathbb{R}^2$ as follows: $A(0,s)$, $B(0,0)$, $C(s,0)$, and $D(s,s)$. With the pole at the point $(x,y)$ such that $AP$ = 13ft, $BP$ = 5 ft, and $CP$ = 17 ft. We can construct a circle of radius 13 ft centered at $A$, a circle of radius 5 ft centered at $B$, and a circle of radius 17 ft centered at $C$, such that all three circles intersect at point $P$. The equations of these three circles are:
 \begin{equation}
     x^2 + (y-s)^2 = 13^2

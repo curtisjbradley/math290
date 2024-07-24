@@ -1,0 +1,32 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\title{Problem 583}
+\author{Curtis Bradley}
+\date{March 2024}
+
+\begin{document}
+
+Let $s$ be the length of each side of the square $ABCD$. Place the square in $\mathbb{R}^2$ as follows: $A(0,s)$, $B(0,0)$, $C(s,0)$, and $D(s,s)$. With the pole at the point $(x,y)$ such that $AP$ = 17ft, $BP$ = 24 ft, and $CP$ = 25 ft. we can construct a circle of radius 17 ft centered at $A$, a circle of radius 24 ft centered at $B$, and a circle of radius 25 ft centered at $C$, such that all three circles intersect at point $P$. The equations of these three circles are:
+\begin{equation}
+    x^2 + (y-s)^2 = 17^2
+\end{equation}
+\begin{equation}
+    x^2+y^2=24^2
+\end{equation}
+\begin{equation}
+    (x-s)^2 + y^2 = 25^2
+\end{equation}
+By substituting (2) into (1) and (3), we find 
+
+\begin{center}
+    $x = \frac{s^2-49}{2s}$ and $y=\frac{s^2 + 287}{2s}$
+\end{center}
+Substituting both into equation (2) gives us
+$s^4 - 914s^2+ 42385 = 0$. By quadratic formula $s^2 = 49$ or $s^2 = 865$. If $s^2 = 49$, we have $P = (0,24)$, the pole is outside the square. If $s^2 = 865$, we have $P = (\frac{408}{\sqrt{865}},\frac{576}{\sqrt{865}})\approx (13.87,19.58)$. The pole is inside the square. Therefore the pole can either be inside or outside the square.
+
+\end{document}
+
